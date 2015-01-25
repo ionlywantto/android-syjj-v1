@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5ECFF"
+    tools:context="com.example.whjt.CodeQuery" >
+    
+    <TextView
+        android:id="@+id/queryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#7B9CDF"
+        android:gravity="center"
+        android:text="@string/title_activity_code_query"
+        android:textColor="#FCFDF1"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:id="@+id/queryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/queryTitle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/hello_world"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/text_code_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/btn_code_query"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_code_query"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/text_code_query"
+        android:layout_alignBottom="@+id/text_code_query"
+        android:layout_alignParentRight="true"
+        android:text="@string/query_name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/btn_code_query"
+        android:layout_below="@+id/btn_code_query"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" >
+        
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fault_view_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fault_code_title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fault_code_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fault_view_code"
+                android:text=""
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fault_view_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fault_score_title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fault_score_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fault_view_score"
+                android:text=""
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fault_view_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fault_amount_title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fault_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fault_view_amount"
+                android:text=""
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fault_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fault_name_title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fault_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fault_view_name"
+                android:text=""
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fault_view_basis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fault_basis_title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fault_basis_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fault_view_basis"
+                android:text=""
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

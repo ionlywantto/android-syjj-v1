@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">十堰交警</string>
+    <string name="title">十堰交警</string>
+    <string name="jtlk">交通违法</string>
+    <string name="jtlk_disc">车辆交通违法查询、处理、缴款</string>
+    <string name="jszyw">驾驶证业务</string>
+    <string name="jszyw_disc">驾驶证扣分查询、驾驶证违法办理</string>
+    <string name="jdcyw">机动车业务</string>
+    <string name="jdcyw_disc">车辆交通违法办理、年检信息</string>
+    <string name="jgdt">交管动态</string>
+    <string name="jgdt_disc">施工管制、桥梁限行查询</string>
+    <string name="lswffx">违法代码查询</string>
+    <string name="lswffx_disc">违法代码相关信息查询</string>
+    <string name="func_index">首页</string>
+    <string name="func_tx_title">提醒</string>
+    <string name="func_wo_title">我</string>
+    <string name="func_zd_title">好友</string>
+    <string name="title_activity_code_query">违法代码查询</string>
+    <string name="hello_world">违法代码</string>
+    <string name="action_settings">设置</string>
+    <string name="query_name">查询</string>
+    
+    <string name="code_query_warn">请输入违法代码！</string>
+    <string name="request_failed">查询失败！</string>
+    <string name="parsed_failed">返回信息解析失败！</string>
+    <string name="error_date_notfound">数据未找到！</string>
+    
+    
+    <string name="fault_code_title">违法代码：</string>
+    <string name="fault_score_title">违法记分：</string>
+    <string name="fault_amount_title">罚款金额：</string>
+    <string name="fault_name_title">违法内容：</string>
+    <string name="fault_basis_title">违法依据：</string>
+    
+
+</resources>

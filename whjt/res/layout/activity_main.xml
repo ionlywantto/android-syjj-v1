@@ -1,0 +1,418 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#7B9CDF"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="#FCFDF1"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/content_center"
+        android:layout_below="@+id/textView1"
+        android:background="#E5ECFF" >
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 交通路况 -->
+        <RelativeLayout
+            android:id="@+id/module_jtlk"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        	android:background="@drawable/shape_corners" 
+            android:gravity="center_vertical"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="93px"
+                android:layout_height="86px"
+                android:src="@drawable/xtlk" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="@string/jtlk"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="@string/jtlk_disc"
+                android:textColor="#949494"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow" />
+
+        </RelativeLayout>
+        
+        <!-- 驾驶证业务 -->
+        <RelativeLayout
+            android:id="@+id/module_jszyw"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        	android:background="@drawable/shape_corners" 
+            android:gravity="center_vertical"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/img_module_jszyw"
+                android:layout_width="93px"
+                android:layout_height="86px"
+                android:src="@drawable/jszyw" />
+
+            <TextView
+                android:id="@+id/title_module_jszyw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_module_jszyw"
+                android:text="@string/jszyw"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/disc_module_jszyw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_module_jszyw"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/img_module_jszyw"
+                android:text="@string/jszyw_disc"
+                android:textColor="#949494"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img1_module_jszyw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow" />
+
+        </RelativeLayout>
+        
+                
+        <!-- 机动车业务 -->
+        <RelativeLayout
+            android:id="@+id/module_jdc"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        	android:background="@drawable/shape_corners" 
+            android:gravity="center_vertical"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/img_module_jdc"
+                android:layout_width="93px"
+                android:layout_height="86px"
+                android:src="@drawable/jdcyw" />
+
+            <TextView
+                android:id="@+id/title_module_jdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_module_jdc"
+                android:text="@string/jdcyw"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/disc_module_jdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_module_jdc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/img_module_jdc"
+                android:text="@string/jdcyw_disc"
+                android:textColor="#949494"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img1_module_jdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+        
+        <!-- 交管动态 -->
+        <RelativeLayout
+            android:id="@+id/module_jgdt"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        	android:background="@drawable/shape_corners" 
+            android:gravity="center_vertical"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/img_module_jgdt"
+                android:layout_width="93px"
+                android:layout_height="86px"
+                android:src="@drawable/jgdt" />
+
+            <TextView
+                android:id="@+id/title_module_jgdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_module_jgdt"
+                android:text="@string/jgdt"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/disc_module_jgdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_module_jgdt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/img_module_jgdt"
+                android:text="@string/jgdt_disc"
+                android:textColor="#949494"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img1_module_jgdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+        
+        
+        <!-- 违法代码查询-->
+        <RelativeLayout
+            android:id="@+id/module_lswffx"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        	android:background="@drawable/shape_corners" 
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7dp" >
+
+            <ImageView
+                android:id="@+id/img_module_lswffx"
+                android:layout_width="93px"
+                android:layout_height="86px"
+                android:src="@drawable/lswffx" />
+
+            <TextView
+                android:id="@+id/title_module_lswffx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_module_lswffx"
+                android:text="@string/lswffx"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/disc_module_lswffx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_module_lswffx"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/img_module_lswffx"
+                android:text="@string/lswffx_disc"
+                android:textColor="#949494"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img1_module_lswffx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部功能区 -->
+    <LinearLayout
+        android:id="@+id/content_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#799AD6"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/func_index"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4A86CD"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="27px"
+                android:layout_height="34px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/indexpage" />
+
+            <TextView
+                android:id="@+id/func_index_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageButton1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/func_index"
+                android:textColor="#FCFDF1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/func_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/func_tx_img"
+                android:layout_width="37px"
+                android:layout_height="35px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/func_tx" />
+
+            <TextView
+                android:id="@+id/func_tx_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/func_tx_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/func_tx_title"
+                android:textColor="#FCFDF1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/func_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/func_wo_img"
+                android:layout_width="37px"
+                android:layout_height="35px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/func_wo" />
+
+            <TextView
+                android:id="@+id/func_wo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/func_wo_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/func_wo_title"
+                android:textColor="#FCFDF1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/func_zd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/func_zd_img"
+                android:layout_width="39px"
+                android:layout_height="35px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/func_zd" />
+
+            <TextView
+                android:id="@+id/func_zd_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/func_zd_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/func_zd_title"
+                android:textColor="#FCFDF1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

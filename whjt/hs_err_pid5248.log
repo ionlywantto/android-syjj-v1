@@ -1,0 +1,112 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=5248, tid=4376
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_72-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.72-b04 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000043e800):  JavaThread "Unknown thread" [_thread_in_vm, id=4376, stack(0x0000000002670000,0x0000000002770000)]
+
+Stack: [0x0000000002670000,0x0000000002770000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000043e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4376, stack(0x0000000002670000,0x0000000002770000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.012 loading class 0x00000000023dc150 done
+Event: 0.012 loading class 0x00000000023dbb70 done
+Event: 0.012 loading class 0x00000000023dbb50
+Event: 0.012 loading class 0x00000000023e3ce0
+Event: 0.012 loading class 0x00000000023e3ce0 done
+Event: 0.012 loading class 0x00000000023e3d10
+Event: 0.012 loading class 0x00000000023e3d10 done
+Event: 0.012 loading class 0x00000000023e3d40
+Event: 0.012 loading class 0x00000000023e3d40 done
+Event: 0.013 loading class 0x00000000023dbb50 done
+
+
+Dynamic libraries:
+0x000000013f250000 - 0x000000013f283000 	C:\Program Files\Java\jdk1.7.0_72\bin\javaw.exe
+0x0000000077220000 - 0x00000000773c9000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077000000 - 0x000000007711f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd210000 - 0x000007fefd27c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefd400000 - 0x000007fefd4db000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefd890000 - 0x000007fefd92f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefd6f0000 - 0x000007fefd70f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefd760000 - 0x000007fefd88d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077120000 - 0x000000007721a000 	C:\Windows\system32\USER32.dll
+0x000007fefda00000 - 0x000007fefda67000 	C:\Windows\system32\GDI32.dll
+0x000007fefe680000 - 0x000007fefe68e000 	C:\Windows\system32\LPK.dll
+0x000007fefda70000 - 0x000007fefdb39000 	C:\Windows\system32\USP10.dll
+0x000007fefa450000 - 0x000007fefa644000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd5f0000 - 0x000007fefd661000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefd9d0000 - 0x000007fefd9fe000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe690000 - 0x000007fefe799000 	C:\Windows\system32\MSCTF.dll
+0x0000000064600000 - 0x00000000646d2000 	C:\Program Files\Java\jdk1.7.0_72\jre\bin\msvcr100.dll
+0x000000006e910000 - 0x000000006f0e3000 	C:\Program Files\Java\jdk1.7.0_72\jre\bin\server\jvm.dll
+0x000007feedc00000 - 0x000007feedc09000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefd710000 - 0x000007fefd75d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefd500000 - 0x000007fefd508000 	C:\Windows\system32\NSI.dll
+0x000007fef9800000 - 0x000007fef983b000 	C:\Windows\system32\WINMM.dll
+0x00000000773e0000 - 0x00000000773e7000 	C:\Windows\system32\PSAPI.DLL
+0x000000006e900000 - 0x000000006e90f000 	C:\Program Files\Java\jdk1.7.0_72\jre\bin\verify.dll
+0x000000006e8d0000 - 0x000000006e8f8000 	C:\Program Files\Java\jdk1.7.0_72\jre\bin\java.dll
+0x000000006e8b0000 - 0x000000006e8c5000 	C:\Program Files\Java\jdk1.7.0_72\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Program Files\android-sdk_r24.0.2-windows\android-sdk-windows\platforms\android-21\android.jar 
+java_command: com.example.whjt.tools.RequestTool
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_72
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_72\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_72\lib\tools.jar;;C:\Program Files\Java\jdk1.7.0_72\jre\lib\rt.jar;
+PATH=C:/Program Files/Java/jdk1.7.0_72/bin/../jre/bin/server;C:/Program Files/Java/jdk1.7.0_72/bin/../jre/bin;C:/Program Files/Java/jdk1.7.0_72/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.7.0_72\bin;C:\Program Files\Java\jdk1.7.0_72\jre\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\android-sdk_r24.0.2-windows\android-sdk-windows\platform-tools;D:\Program Files\android-sdk_r24.0.2-windows\android-sdk-windows\tools;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\eclipse;
+USERNAME=LYJ
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8068908k(2988588k free), swap 8591332k(2693420k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.72-b04) for windows-amd64 JRE (1.7.0_72-b14), built on Sep 26 2014 19:14:42 by "java_re" with unknown MS VC++:1600
+
+time: Sat Jan 10 16:34:12 2015
+elapsed time: 0 seconds
+
